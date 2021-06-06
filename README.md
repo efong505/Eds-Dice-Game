@@ -27,4 +27,7 @@ pip install pillow
 pip install pyinstaller
 pyinstaller --windowed --icon=dice.ico FongFinalRevised.py
  ````
+ 
+## Last But Not Least
+For some reason, pyinstaller does not import the image files properly. 
 ### Enjoy!!!
