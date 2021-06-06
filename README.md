@@ -26,8 +26,19 @@ pip install pygame
 pip install pillow
 pip install pyinstaller
 pyinstaller --windowed --icon=dice.ico FongFinalRevised.py
+copy splash.png .\dist\FongFinalRevised\
+copy game-over2.jpg .\dist\FongFinalRevised\
+copy youwon.jpg .\dist\FongFinalRevised\
  ````
  
 ## Last But Not Least
-For some reason, pyinstaller does not import the image files properly. 
+For some reason, pyinstaller does not import the image files properly. These files need to be copied into the dist folder for the program to work:
+````python
+ splash.png
+ game-over2.jpg
+ youwon.jpg
+
+````
+
+Once the files are copied over, double click the `FongFinalRevised.exe` file and the program will launch. 
 ### Enjoy!!!
