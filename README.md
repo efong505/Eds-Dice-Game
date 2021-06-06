@@ -49,3 +49,5 @@ For some reason, pyinstaller does not import the image files properly. These fil
 
 Once the files are copied over, double click the `FongFinalRevised.exe` file and the program will launch. 
 ### Enjoy!!!
+
+![Picture of Taco](https://pbs.twimg.com/media/B0_tLWcIAAAOwbq.jpg)
