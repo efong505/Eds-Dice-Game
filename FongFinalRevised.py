@@ -15,7 +15,7 @@ import pygame
 
 class DiceGame():
     def __init__(self):
-        'Initilizer(constructor) Sets up the window, canvas, window sizes and centers the startup in the center of the screen. '
+        'Initilizer(constructor) Sets up the window, canvas, window sizes and centers the startup in the center of the screen.'
 
         # list, dictionary, and variables instantiation
         self.dice = []
@@ -51,7 +51,7 @@ class DiceGame():
 
     # Roll Dice Action
     def roll_dice(self):
-        'The roll_dice method is the action handler for the roll button. '
+        'The roll_dice method is the action handler for the roll button.'
         # Dice objects
         self.dice_objects()
         # Check and display who wins round
@@ -64,7 +64,7 @@ class DiceGame():
 
     # Checks to see who wins round and displays win or loss
     def roundCheck(self):
-        'Check to see who wins the round displays if player won or lost the round'
+        'Check to see who wins the round displays if player won or lost the round.'
         if(self.userDiceString > self.computerDiceString):
             self.displayWinLoseLabel.configure(text="YOU WIN!!!", fg='green')
             self.userTally += 1
@@ -75,7 +75,7 @@ class DiceGame():
     # Checks to see who wins game, display if user wins or loses
     # with graphics and play winning or losing sound
     def gameWinLose(self):
-        'Checks who wins game, displays if user wins or loses and displays graphics and sounds accordlingly'
+        'Checks who wins game, displays if user wins or loses and displays graphics and sounds accordlingly.'
         if (self.bttn_clicks == 5 and self.computerTally > self.userTally):
             self.rollButton.configure(state='disabled')
 
@@ -112,8 +112,13 @@ class DiceGame():
 
     # Dice Objects
     def dice_objects(self):
-        'Uses the library to '
-
+        '''
+            Uses the library unicode characters to display the dice
+            on the screen. The dice dictionary is used to correspond to the
+            number correlating to the unicode character so the dice values
+            can be calculated. Then calls the addDiceTogether() method
+            to get the value of both dice rolled. 
+        '''
         # Dice list
         self.dice = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
         # Dice dictionary
@@ -140,14 +145,13 @@ class DiceGame():
 
         # Computer Label
         self.computerLabel.configure(text="Computer's Dice")
-        # User Combined Dice Score
-        self.userDiceString = self.d[self.userDice1]+self.d[self.userDice2]
-        # Computer Combined Dice Score
-        self.computerDiceString = self.d[self.computerDice1]+self.d[self.computerDice2]
 
+        # Add Dice together
+        self.addDiceTogether()
+        
     # Labels
     def labels(self):
-        'Labels for win and game plays along with button clicks counter(increment)'
+        'Labels for win and game plays along with button clicks counter(increment).'
         self.numberRolledLabel.configure(text="You rolled  "+str(self.userDiceString))
         self.computerNumberRolledLabel.configure(text="Computer rolled  "+str(self.computerDiceString))
         self.bttn_clicks += 1
@@ -155,7 +159,7 @@ class DiceGame():
 
     # Restart Action
     def restart(self):
-        'The restart method is the action handler to the Start/restart button'
+        'The restart method is the action handler to the Start/restart button.'
         self.bttn_clicks= 0
         self.userTally = 0
         self.computerTally = 0
@@ -170,7 +174,7 @@ class DiceGame():
         self.rollButton.configure(state='normal')
 
     def buttons_labels(self):
-        'The buttons_lables method creates all of the buttons and lables in one place'
+        'The buttons_lables method creates all of the buttons and lables in one place.'
         # Start with Dice not on screen
         self.diceObjects = tk.Label(self.t, text='asdf', font=('Times', 120),fg='green')
         # Start with Computer Dice not on screen
@@ -206,6 +210,14 @@ class DiceGame():
         # Rules Label
         self.rulesLabel = tk.Label(self.t, text='Game rule: The player wins if he/she scores the most points within 5 rolls against the computer.', font=('Times',13,'bold'),fg='yellow',bg="black")
         self.c.create_window(363, 20, window=self.rulesLabel)
+
+    # Add dice together Method
+    def addDiceTogether(self):
+        'Method that adds the two dice togetether to get the score of the round for user and computer.'
+        # User Combined Dice Score
+        self.userDiceString = self.d[self.userDice1]+self.d[self.userDice2]
+        # Computer Combined Dice Score
+        self.computerDiceString = self.d[self.computerDice1]+self.d[self.computerDice2]
 
 # Create App object
 app = DiceGame()
