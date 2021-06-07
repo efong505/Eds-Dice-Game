@@ -53,6 +53,17 @@ For some reason, pyinstaller does not import the image files properly. These fil
 ````
 
 Once the files are copied over, double click the `FongFinalRevised.exe` file and the program will launch. 
+
+### Note:
+You can delete the following files and folders after the dist folder has been created:
+````python
+ build 
+ __pycache__ 
+ FongFinalRevised.py
+ 
+````
+
+
 ### Enjoy!!!
 
 
