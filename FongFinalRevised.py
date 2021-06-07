@@ -112,6 +112,7 @@ class DiceGame():
 
     # Dice Objects
     def dice_objects(self):
+        'Uses the library to '
 
         # Dice list
         self.dice = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
