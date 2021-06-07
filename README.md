@@ -42,12 +42,13 @@ I've included a batch file pyinstaller.bat It also creates an executable file fo
  copy dice.ico .\dist\FongFinalRevised\
  ````
  
-## Last But Not Least
+## Last But Not Least (Only if you're not using the batch file and doing everything manually)
 For some reason, pyinstaller does not import the image files properly. These files need to be copied into the dist folder for the program to work:
 ````python
  splash.png
  game-over2.jpg
  youwon.jpg
+ dice.ico
 
 ````
 
