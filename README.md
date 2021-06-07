@@ -1,4 +1,5 @@
-# Ed's Dice Game
+![Dice](https://raw.githubusercontent.com/efong505/Eds-Dice-Game/main/splash.png)
+# Ed's Dice Game 
  A game that plays against the computer rolling 5 times. Winner is the one that scores the highest points. 
 
 ## Prerequisits
@@ -50,4 +51,4 @@ For some reason, pyinstaller does not import the image files properly. These fil
 Once the files are copied over, double click the `FongFinalRevised.exe` file and the program will launch. 
 ### Enjoy!!!
 
-![Picture of Taco](https://pbs.twimg.com/media/B0_tLWcIAAAOwbq.jpg)
+
