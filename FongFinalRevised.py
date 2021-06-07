@@ -84,12 +84,12 @@ class DiceGame():
             self.computerLabel.configure(text="") # hide computer label
             self.computerDiceObjects.configure(text="") # hide computer dice
             # Lost label
-            self.img = ImageTk.PhotoImage(Image.open('C:\\Users\\Ed\\Documents\\School\\CNM\\Summer 2021\\Python\\Programs\\Final\\dicerollgame-master\\exe\\game-over2.jpg').resize((755,200)))
+            self.img = ImageTk.PhotoImage(Image.open('game-over2.jpg').resize((755,200)))
             self.winLoseLabel = tk.Label(self.t, image=self.img)
             self.i = self.c.create_window(350, 520, window=self.winLoseLabel)
             # Lose Sound
             pygame.mixer.init()
-            pygame.mixer.music.load('C:\\Users\\Ed\\Documents\\School\\CNM\\Summer 2021\\Python\\Programs\\Final\\dicerollgame-master\\exe\\ooh.mp3')
+            pygame.mixer.music.load('ooh.mp3')
             pygame.mixer.music.play()
 
 
@@ -101,13 +101,13 @@ class DiceGame():
             self.computerLabel.configure(text="") # hide computer label
             self.computerDiceObjects.configure(text="") # hide computer dice
             # Win Label
-            self.img = ImageTk.PhotoImage(Image.open("C:\\Users\\Ed\\Documents\\School\\CNM\\Summer 2021\\Python\\Programs\\Final\\dicerollgame-master\\exe\\youwon.jpg").resize((755,200)))
+            self.img = ImageTk.PhotoImage(Image.open("youwon.jpg").resize((755,200)))
             self.winLoseLabel = tk.Label(self.t, image=self.img)
             self.i = self.c.create_window(350, 520, window=self.winLoseLabel)
 
             #Win Sound
             pygame.mixer.init()
-            pygame.mixer.music.load('C:\\Users\\Ed\\Documents\\School\\CNM\\Summer 2021\\Python\\Programs\\Final\\dicerollgame-master\\exe\\applause.wav')
+            pygame.mixer.music.load('applause.wav')
             pygame.mixer.music.play()
 
     # Dice Objects
@@ -193,7 +193,7 @@ class DiceGame():
         self.computerNumberRolledLabel = tk.Label(self.t, text='NO ROLLS YET', font=('Times',20,'bold'),bg='yellow', fg='purple', width=13)
         self.c.create_window(580, 690, window=self.computerNumberRolledLabel)
         # Start Splash Image
-        self.splash = ImageTk.PhotoImage(Image.open("C:\\Users\\Ed\\Documents\\School\\CNM\\Summer 2021\\Python\\Programs\\Final\\dicerollgame-master\\exe\\splash.png").resize((725, 600)))
+        self.splash = ImageTk.PhotoImage(Image.open("splash.png").resize((725, 600)))
         self.splashLabel = tk.Label(self.t, image=self.splash)
         self.i = self.c.create_window(362, 425, window=self.splashLabel)
         # User Label
