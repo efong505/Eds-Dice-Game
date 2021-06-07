@@ -1,4 +1,5 @@
-![Dice](https://raw.githubusercontent.com/efong505/Eds-Dice-Game/main/splash.png)
+<img src="https://raw.githubusercontent.com/efong505/Eds-Dice-Game/main/splash.png" width="200">
+
 # Ed's Dice Game 
  A game that plays against the computer rolling 5 times. Winner is the one that scores the highest points. 
 
