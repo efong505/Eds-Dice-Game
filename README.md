@@ -29,17 +29,18 @@ I've included a batch file pyinstaller.bat It also creates an executable file fo
  
  You can also use these commands to install everthing in the batch file.
  ````batch
- 
- curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
- python3 get-pip.py 
- pip install pygame
- pip install pillow
- pip install pyinstaller
- pyinstaller --windowed --icon=dice.ico FongFinalRevised.py
- copy splash.png .\dist\FongFinalRevised\
- copy game-over2.jpg .\dist\FongFinalRevised\
- copy youwon.jpg .\dist\FongFinalRevised\
- copy dice.ico .\dist\FongFinalRevised\
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py 
+pip install pygame
+pip install pillow
+pip install pyinstaller
+pyinstaller --windowed --icon=dice.ico FongFinalRevised.py
+copy splash.png .\dist\FongFinalRevised\
+copy game-over2.jpg .\dist\FongFinalRevised\
+copy youwon.jpg .\dist\FongFinalRevised\
+copy dice.ico .\dist\FongFinalRevised\
+copy ooh.mp3 .\dist\FongFinalRevised\
+copy applause.wav .\dist\FongFinalRevised\
  ````
  
 ## Last But Not Least (Only if you're not using the batch file and doing everything manually)
@@ -49,6 +50,8 @@ For some reason, pyinstaller does not import the image files properly. These fil
  game-over2.jpg
  youwon.jpg
  dice.ico
+ ooh.mp3
+ applause.wav
 
 ````
 
