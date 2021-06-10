@@ -11,3 +11,5 @@ copy youwon.jpg .\dist\FongFinalRevised\
 copy dice.ico .\dist\FongFinalRevised\
 copy ooh.mp3 .\dist\FongFinalRevised\
 copy applause.wav .\dist\FongFinalRevised\
+copy snakeeyesroll.wav .\dist\FongFinalRevised\
+

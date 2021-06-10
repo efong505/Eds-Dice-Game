@@ -54,6 +54,10 @@ class DiceGame():
         'The roll_dice method is the action handler for the roll button.'
         # Dice objects
         self.dice_objects()
+        # Roll Dice Sound
+        pygame.mixer.init()
+        pygame.mixer.music.load('snakeeyesroll.wav')
+        pygame.mixer.music.play()
         # Check and display who wins round
         self.roundCheck()
         # Play and Win/Lose Labels
@@ -71,6 +75,10 @@ class DiceGame():
         else:
             self.displayWinLoseLabel.configure(text="YOU LOST!", fg='red')
             self.computerTally += 1
+
+
+   
+        
 
     # Checks to see who wins game, display if user wins or loses
     # with graphics and play winning or losing sound

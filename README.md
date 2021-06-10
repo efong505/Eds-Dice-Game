@@ -41,6 +41,7 @@ copy youwon.jpg .\dist\FongFinalRevised\
 copy dice.ico .\dist\FongFinalRevised\
 copy ooh.mp3 .\dist\FongFinalRevised\
 copy applause.wav .\dist\FongFinalRevised\
+copy snakeeyesroll.wav .\dist\FongFinalRevised\
  ````
  
 ## Last But Not Least (Only if you're not using the batch file and doing everything manually)
@@ -52,6 +53,7 @@ For some reason, pyinstaller does not import the image files properly. These fil
  dice.ico
  ooh.mp3
  applause.wav
+ snakeeyesroll.wav
 
 ````
 
